@@ -16,8 +16,8 @@ app.listen(port, function () {
 
 //create a chat connector for the bot
 var connector = new botbuilder.ChatConnector({
-    appId: "930152ad-7eb3-4fb6-b6d8-ea185e1088de",
-    appPassword: "xKUTiSFhcm9BnNokpLxADZF"
+    appId: process.env.MICROSOFT_APP_ID,
+    appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
 
 //load the botbuilder classes and build a unversal bot using the chat connector
